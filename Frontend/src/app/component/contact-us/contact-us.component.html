@@ -1,0 +1,26 @@
+<body>
+    <form [formGroup]="contactUsForm" (ngSubmit)="contactUs()">
+        <div>
+            <label> Name: </label>
+            <input type="text" placeholder="Type here" formControlName= "name" name="name" required>
+        </div>
+        
+        <div>
+            <label> E-mail: </label>
+            <input type="text" placeholder="Type here" formControlName= "email" name="email" required>
+        </div>
+        
+        <div>
+            <label> Message: </label>
+            <input type="text" placeholder="Type here" formControlName= "message" name="message" required>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+
+        <div>
+            {{post}}
+        </div>
+    </form>    
+</body>
